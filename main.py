@@ -16,10 +16,12 @@ import pyodbc
 import streamlit as st
 
 # ---------------- CONFIG ----------------
-SERVER = r"taxrollstage-db"
+SERVER = r"fileprepdb"
 DATABASE = "TaxrollStaging"
 DRIVER = "{ODBC Driver 13 for SQL Server}"
-CONN_STR = f"DRIVER={DRIVER};SERVER={SERVER};DATABASE={DATABASE};Trusted_Connection=yes;"
+USERNAME = "taxroll_engineer"
+PASSWORD = "F4hb2!123"
+CONN_STR = f"DRIVER={DRIVER};SERVER={SERVER};DATABASE={DATABASE};UID={USERNAME};PWD={PASSWORD}"
 
 # Column name in the CAD lookup table (tbl_cads_shiny)
 CAD_TABLE = "tbl_cads_shiny"
