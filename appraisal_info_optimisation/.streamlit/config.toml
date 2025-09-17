@@ -1,0 +1,7 @@
+[server]
+# Max upload size in MB (set to 2 GB here)
+maxUploadSize = 10240
+
+# (optional) prevent Streamlit from timing out on long runs
+maxMessageSize = 10240
+enableXsrfProtection = true
